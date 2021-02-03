@@ -76,3 +76,8 @@ button:hover {
   position: relative;
   top: -25px;
 }
+small {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
