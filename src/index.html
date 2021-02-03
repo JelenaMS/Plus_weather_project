@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/7a0cd90f5b.js" crossorigin="anonymous"></script>
+  <title>Project</title>
+  <link rel="stylesheet" href="/src/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <img src="/images/weather.png" width="200">
+    <br />
+    <div class="currentDATA">
+      <br />
+      <ul>
+        <li id="date"></li>
+      </ul>
+      <form class="search-form" id="search-form">
+        <h1 id=city>
+          Zagreb
+        </h1>
+        <input type="search" placeholder="Enter a city" id=city-input>
+        <br />
+        <input type="submit" value="Search" />
+      </form>
+      </br>
+      <button id="current-location-button">
+        Current
+      </button>
+      </br>
+      <h2>
+        <h1 class="display-3">
+          <div class="row">
+            <div class="col-6">
+              <span class="temperature" id="temperature">12</span>
+              <span class="units">
+                <a href="#" id="celsius-link">°C</a>
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
+            </div>
+            <div class="col-6">
+              <i class="fas fa-cloud-sun"></i>
+            </div>
+          </div>
+    </div>
+    <br />
+    </h1>
+    </h2>
+
+
+    <div class="days">
+      <div class="row">
+        <div class="col-sm">
+          <i class="fas fa-cloud-sun-rain"></i>
+          <br />
+          Day 1
+        </div>
+        <div class="col-sm">
+          <i class="fas fa-cloud"></i>
+          <br />
+          Day 2
+        </div>
+        <div class="col-sm">
+          <i class="fas fa-sun"></i>
+          <br />
+          Day 3
+        </div>
+        <div class="col-sm">
+          <i class="fas fa-cloud-showers-heavy"></i>
+          <br />
+          Day 4
+        </div>
+        <div class="col-sm">
+          <i class="fas fa-cloud-sun"></i>
+          <br />
+          Day 5
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/src/index.js"></script>
+</body>
+
+</html>

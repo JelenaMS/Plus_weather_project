@@ -1,0 +1,78 @@
+body {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+.currentDATA {
+  text-align: center;
+}
+h2 {
+  margin: 0 auto;
+}
+.container {
+  margin: 0 auto;
+  font-family: "Roboto Slab", serif;
+  color: #5f7798;
+  padding-bottom: 5%;
+  padding-top: 1%;
+}
+.days {
+  font-size: xx-large;
+  padding-left: 10%;
+  padding-top: 5%;
+}
+input[type="submit"] {
+  color: #a9bedc;
+  font-size: 20px;
+  line-break: auto;
+  background: transparent;
+  border: solid #b1c4de 2px;
+  border-radius: 30px;
+  box-shadow: 5px 2px 2px #a9bedc;
+  transition: all 150ms ease-in-out;
+  font-family: "Roboto Slab", serif;
+}
+button {
+  color: #a9bedc;
+  font-size: 20px;
+  line-break: auto;
+  background: transparent;
+  border: solid #b1c4de 2px;
+  border-radius: 30px;
+  box-shadow: 5px 2px 2px #a9bedc;
+  transition: all 150ms ease-in-out;
+  font-family: "Roboto Slab", serif;
+}
+input[type="search"] {
+  width: 50%;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #b1c4de;
+  color: #d4dcea;
+  font-size: 20px;
+  border: 2px solid #b1c4de;
+}
+
+input[type="submit"]:hover {
+  background-color: #b1c4de;
+  color: #d4dcea;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #b1c4de;
+  color: #d4dcea;
+  cursor: pointer;
+}
+
+#celsius-link {
+  font-size: small;
+}
+#fahrenheit-link {
+  font-size: small;
+}
+.units {
+  position: relative;
+  top: -25px;
+}
