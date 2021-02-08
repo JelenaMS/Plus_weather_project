@@ -1,5 +1,8 @@
 body {
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding-bottom: 5%;
+  padding-top: 2%;
+  color: #ffffff;
+  display: block;
 }
 img {
   display: block;
@@ -8,15 +11,19 @@ img {
 .currentDATA {
   text-align: center;
 }
+h1 {
+  text-align: center;
+}
 h2 {
   margin: 0 auto;
 }
 .container {
-  margin: 0 auto;
   font-family: "Roboto Slab", serif;
   color: #5f7798;
-  padding-bottom: 5%;
-  padding-top: 2%;
+  padding: 20px;
+  border: 5px solid #d7dfec;
+  border-radius: 5px;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 .days {
   font-size: xx-large;
@@ -34,7 +41,7 @@ input[type="submit"] {
   transition: all 150ms ease-in-out;
   font-family: "Roboto Slab", serif;
 }
-button {
+#current-location-button {
   color: #a9bedc;
   font-size: 20px;
   line-break: auto;
@@ -60,7 +67,7 @@ input[type="submit"]:hover {
   color: #d4dcea;
   cursor: pointer;
 }
-button:hover {
+#current-location-button:hover {
   background-color: #b1c4de;
   color: #d4dcea;
   cursor: pointer;
@@ -79,5 +86,12 @@ button:hover {
 small {
   display: block;
   margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+}
+ul {
+  list-style-type: none;
+}
+li {
   text-align: center;
 }
