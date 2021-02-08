@@ -20,11 +20,16 @@ h2 {
 .container {
   font-family: "Roboto Slab", serif;
   color: #5f7798;
+  border-radius: 5px;
+}
+.wrapper {
+  max-width: 700px;
+  margin: 30px auto;
   padding: 20px;
   border: 5px solid #d7dfec;
-  border-radius: 5px;
   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
+
 .days {
   font-size: xx-large;
   padding-left: 10%;
