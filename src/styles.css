@@ -37,22 +37,22 @@ h2 {
 }
 input[type="submit"] {
   color: #a9bedc;
-  font-size: 20px;
+  font-size: 15px;
   line-break: auto;
   background: transparent;
   border: solid #b1c4de 2px;
-  border-radius: 30px;
+  border-radius: 20px;
   box-shadow: 5px 2px 2px #a9bedc;
   transition: all 150ms ease-in-out;
   font-family: "Roboto Slab", serif;
 }
 #current-location-button {
   color: #a9bedc;
-  font-size: 20px;
+  font-size: 15px;
   line-break: auto;
   background: transparent;
   border: solid #b1c4de 2px;
-  border-radius: 30px;
+  border-radius: 20px;
   box-shadow: 5px 2px 2px #a9bedc;
   transition: all 150ms ease-in-out;
   font-family: "Roboto Slab", serif;
