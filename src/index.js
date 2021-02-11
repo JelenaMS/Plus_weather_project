@@ -38,13 +38,35 @@ function showWeather(response) {
    descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
-  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  dateElement.innerHTML = formatDate(new Date(response.data.dt * 1000));
 }
 
+function showForecast(response){
+
+	  let forecast = null;
+	
+	  for (let index = 0; index < 5; index++) {
+      forecast = response.data.list[index];
+      
+       let forecastElementTemp = document.querySelector("#temperature" + (index + 1));
+       
+       forecastElementTemp.innerHTML =   Math.round(forecast.main.temp_min) + '°' + ' - ' + Math.round(forecast.main.temp_max)+ '°';
+
+       let forecastElementHours = document.querySelector("#hours" + (index + 1));
+
+       const date = new Date(forecast.dt * 1000)
+       forecastElementHours.innerHTML = date.getHours() + ':00';
+	  
+	}
+
+}
 function searchCity(city) {
   let apiKey = "e7af49d14fd5f711e37ceffc7696a52f";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showWeather);
+
+   apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showForecast);
   
 }
 
