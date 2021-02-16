@@ -31,9 +31,8 @@ h2 {
 }
 
 .hours {
-  font-size: xx-large;
-  padding-left: 10%;
-  padding-top: 5%;
+  font-size: large;
+  padding: 5%;
 }
 input[type="submit"] {
   color: #a9bedc;
