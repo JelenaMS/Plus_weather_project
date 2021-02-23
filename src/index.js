@@ -32,8 +32,6 @@ function showWeather(response) {
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
      celsiusTemperature = response.data.main.temp;
-     
-
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
   cityElement.innerHTML = response.data.name; 
    descriptionElement.innerHTML = response.data.weather[0].description;
@@ -50,7 +48,6 @@ function showWeather(response) {
 function showForecast(response){
 
 	  let forecast = null;
-	
 	  for (let index = 0; index < 5; index++) {
       forecast = response.data.list[index];
       
@@ -87,12 +84,16 @@ function searchLocation(position) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(showWeather);
+    apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showForecast);
+
 }
 
 function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
+
 function convertToFahrenheit(event) {
 event.preventDefault();
 let temperatureElement = document.querySelector("#temperature");
